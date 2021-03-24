@@ -79,8 +79,10 @@ WSGI_APPLICATION = 'wmw.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        # 'NAME': BASE_DIR / 'db.sqlite3', # This produces an error: unsupported operand type(s) for /: 'str' and 'str'
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'wmw_django_db',
+        'USER': sk.psql_user,
+        'PASSWORD' : sk.psql_pass,
+        'HOST' : 'localhost'
     }
 }
 
