@@ -5,7 +5,7 @@ from django.db import models
 
 class IndustryGroups(models.Model):
     symbol = models.CharField(max_length = 10)
-    ind_grp_rnk = models.CharField(max_length = 50)
+    ind_grp_name = models.CharField(max_length = 50, null=True)
     no_of_stocks = models.IntegerField()
     ind_grp_rnk = models.IntegerField()
     ind_grp_rnk_last_wk = models.IntegerField()
