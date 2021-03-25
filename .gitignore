@@ -19,7 +19,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 /wmw/wmw/wmw_sk.py
-/wmw/marketsmith/__pycache__
+/wmw/marketsmith/__pycache__/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
