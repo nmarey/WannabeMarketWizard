@@ -26,7 +26,7 @@ class growth250(models.Model):
     price_change_usd = models.DecimalField(max_digits = 10, decimal_places = 2)
     price_change_pct = models.DecimalField(max_digits = 5, decimal_places = 1)
     pct_off_high = models.DecimalField(max_digits = 6, decimal_places = 2)
-    pct_vol_chg_vs_50 = models.DecimalField(max_digits = 6, decimal_places = 2)
+    pct_vol_chg_vs_50 = models.DecimalField(max_digits = 6, decimal_places = 2, null = True)
     vol_avg_50_day_shares = models.BigIntegerField()
     vol_avg_50_day_usd = models.BigIntegerField()
     market_cap_mil = models.DecimalField(max_digits=18, decimal_places=1)
