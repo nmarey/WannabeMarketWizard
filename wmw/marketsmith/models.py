@@ -33,11 +33,11 @@ class growth250(models.Model):
     comp_rating = models.IntegerField()
     eps_rating = models.IntegerField()
     rs_rating = models.IntegerField()
-    ad_rating = models.CharField(max_length = 10)
-    smr_rating = models.CharField(max_length = 10)
+    ad_rating = models.CharField(max_length = 10, null=True)
+    smr_rating = models.CharField(max_length = 10, null=True)
     ind_grp_rank = models.IntegerField()
     ind_name = models.CharField(max_length = 50) 
-    ipo_date = models.DateField(auto_now=False, auto_now_add=False)
+    ipo_date = models.DateField(auto_now=False, auto_now_add=False, null=True)
     dwnld_dt = models.DateField(auto_now=False, auto_now_add=False)
 
     def __str__(self):
